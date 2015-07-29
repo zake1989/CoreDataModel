@@ -1,0 +1,2 @@
+# CoreDataModel
+Core Data example
