@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCEC8D1E1B694AE0007474AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEC8D1D1B694AE0007474AB /* AppDelegate.swift */; };
+		DCEC8D211B694AE0007474AB /* TimeLineModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCEC8D1F1B694AE0007474AB /* TimeLineModel.xcdatamodeld */; };
+		DCEC8D231B694AE0007474AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEC8D221B694AE0007474AB /* ViewController.swift */; };
+		DCEC8D261B694AE0007474AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCEC8D241B694AE0007474AB /* Main.storyboard */; };
+		DCEC8D281B694AE0007474AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCEC8D271B694AE0007474AB /* Images.xcassets */; };
+		DCEC8D2B1B694AE0007474AB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCEC8D291B694AE0007474AB /* LaunchScreen.xib */; };
+		DCEC8D371B694AE0007474AB /* TimeLineModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEC8D361B694AE0007474AB /* TimeLineModelTests.swift */; };
+		DCEC8D481B694D3F007474AB /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEC8D471B694D3F007474AB /* CoreDataManager.swift */; };
+		DCEC8D4B1B694DDE007474AB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEC8D4A1B694DDE007474AB /* Person.swift */; };
+		DCEC8D4D1B694DDF007474AB /* TimeLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEC8D4C1B694DDF007474AB /* TimeLine.swift */; };
+		DCEC8D4F1B694DDF007474AB /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEC8D4E1B694DDF007474AB /* Comment.swift */; };
+		DCEC8D511B698EC5007474AB /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEC8D501B698EC5007474AB /* TimeLineViewController.swift */; };
+		DCEC8D531B698FC2007474AB /* TimeLineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEC8D521B698FC2007474AB /* TimeLineCell.swift */; };
+		DCEC8D551B6997B7007474AB /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEC8D541B6997B7007474AB /* CommentsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCEC8D311B694AE0007474AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCEC8D101B694AE0007474AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCEC8D171B694AE0007474AB;
+			remoteInfo = TimeLineModel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DCEC8D181B694AE0007474AB /* TimeLineModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeLineModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCEC8D1C1B694AE0007474AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCEC8D1D1B694AE0007474AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DCEC8D201B694AE0007474AB /* TimeLineModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimeLineModel.xcdatamodel; sourceTree = "<group>"; };
+		DCEC8D221B694AE0007474AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DCEC8D251B694AE0007474AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCEC8D271B694AE0007474AB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DCEC8D2A1B694AE0007474AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DCEC8D301B694AE0007474AB /* TimeLineModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeLineModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCEC8D351B694AE0007474AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCEC8D361B694AE0007474AB /* TimeLineModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineModelTests.swift; sourceTree = "<group>"; };
+		DCEC8D471B694D3F007474AB /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		DCEC8D4A1B694DDE007474AB /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		DCEC8D4C1B694DDF007474AB /* TimeLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLine.swift; sourceTree = "<group>"; };
+		DCEC8D4E1B694DDF007474AB /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		DCEC8D501B698EC5007474AB /* TimeLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
+		DCEC8D521B698FC2007474AB /* TimeLineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineCell.swift; sourceTree = "<group>"; };
+		DCEC8D541B6997B7007474AB /* CommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCEC8D151B694AE0007474AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCEC8D2D1B694AE0007474AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCEC8D0F1B694AE0007474AB = {
+			isa = PBXGroup;
+			children = (
+				DCEC8D1A1B694AE0007474AB /* TimeLineModel */,
+				DCEC8D331B694AE0007474AB /* TimeLineModelTests */,
+				DCEC8D191B694AE0007474AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCEC8D191B694AE0007474AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCEC8D181B694AE0007474AB /* TimeLineModel.app */,
+				DCEC8D301B694AE0007474AB /* TimeLineModelTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCEC8D1A1B694AE0007474AB /* TimeLineModel */ = {
+			isa = PBXGroup;
+			children = (
+				DCEC8D1D1B694AE0007474AB /* AppDelegate.swift */,
+				DCEC8D221B694AE0007474AB /* ViewController.swift */,
+				DCEC8D501B698EC5007474AB /* TimeLineViewController.swift */,
+				DCEC8D521B698FC2007474AB /* TimeLineCell.swift */,
+				DCEC8D541B6997B7007474AB /* CommentsViewController.swift */,
+				DCEC8D241B694AE0007474AB /* Main.storyboard */,
+				DCEC8D271B694AE0007474AB /* Images.xcassets */,
+				DCEC8D291B694AE0007474AB /* LaunchScreen.xib */,
+				DCEC8D491B694D45007474AB /* DataAccessLayer */,
+				DCEC8D401B694B05007474AB /* DataLayer */,
+				DCEC8D1B1B694AE0007474AB /* Supporting Files */,
+			);
+			path = TimeLineModel;
+			sourceTree = "<group>";
+		};
+		DCEC8D1B1B694AE0007474AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCEC8D1C1B694AE0007474AB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCEC8D331B694AE0007474AB /* TimeLineModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCEC8D361B694AE0007474AB /* TimeLineModelTests.swift */,
+				DCEC8D341B694AE0007474AB /* Supporting Files */,
+			);
+			path = TimeLineModelTests;
+			sourceTree = "<group>";
+		};
+		DCEC8D341B694AE0007474AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCEC8D351B694AE0007474AB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCEC8D401B694B05007474AB /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				DCEC8D1F1B694AE0007474AB /* TimeLineModel.xcdatamodeld */,
+				DCEC8D4E1B694DDF007474AB /* Comment.swift */,
+				DCEC8D4C1B694DDF007474AB /* TimeLine.swift */,
+				DCEC8D4A1B694DDE007474AB /* Person.swift */,
+			);
+			name = DataLayer;
+			sourceTree = "<group>";
+		};
+		DCEC8D491B694D45007474AB /* DataAccessLayer */ = {
+			isa = PBXGroup;
+			children = (
+				DCEC8D471B694D3F007474AB /* CoreDataManager.swift */,
+			);
+			name = DataAccessLayer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCEC8D171B694AE0007474AB /* TimeLineModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCEC8D3A1B694AE0007474AB /* Build configuration list for PBXNativeTarget "TimeLineModel" */;
+			buildPhases = (
+				DCEC8D141B694AE0007474AB /* Sources */,
+				DCEC8D151B694AE0007474AB /* Frameworks */,
+				DCEC8D161B694AE0007474AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeLineModel;
+			productName = TimeLineModel;
+			productReference = DCEC8D181B694AE0007474AB /* TimeLineModel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCEC8D2F1B694AE0007474AB /* TimeLineModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCEC8D3D1B694AE0007474AB /* Build configuration list for PBXNativeTarget "TimeLineModelTests" */;
+			buildPhases = (
+				DCEC8D2C1B694AE0007474AB /* Sources */,
+				DCEC8D2D1B694AE0007474AB /* Frameworks */,
+				DCEC8D2E1B694AE0007474AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCEC8D321B694AE0007474AB /* PBXTargetDependency */,
+			);
+			name = TimeLineModelTests;
+			productName = TimeLineModelTests;
+			productReference = DCEC8D301B694AE0007474AB /* TimeLineModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCEC8D101B694AE0007474AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Zake;
+				TargetAttributes = {
+					DCEC8D171B694AE0007474AB = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					DCEC8D2F1B694AE0007474AB = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = DCEC8D171B694AE0007474AB;
+					};
+				};
+			};
+			buildConfigurationList = DCEC8D131B694AE0007474AB /* Build configuration list for PBXProject "TimeLineModel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCEC8D0F1B694AE0007474AB;
+			productRefGroup = DCEC8D191B694AE0007474AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCEC8D171B694AE0007474AB /* TimeLineModel */,
+				DCEC8D2F1B694AE0007474AB /* TimeLineModelTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCEC8D161B694AE0007474AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCEC8D261B694AE0007474AB /* Main.storyboard in Resources */,
+				DCEC8D2B1B694AE0007474AB /* LaunchScreen.xib in Resources */,
+				DCEC8D281B694AE0007474AB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCEC8D2E1B694AE0007474AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCEC8D141B694AE0007474AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCEC8D4B1B694DDE007474AB /* Person.swift in Sources */,
+				DCEC8D231B694AE0007474AB /* ViewController.swift in Sources */,
+				DCEC8D211B694AE0007474AB /* TimeLineModel.xcdatamodeld in Sources */,
+				DCEC8D4F1B694DDF007474AB /* Comment.swift in Sources */,
+				DCEC8D481B694D3F007474AB /* CoreDataManager.swift in Sources */,
+				DCEC8D511B698EC5007474AB /* TimeLineViewController.swift in Sources */,
+				DCEC8D531B698FC2007474AB /* TimeLineCell.swift in Sources */,
+				DCEC8D4D1B694DDF007474AB /* TimeLine.swift in Sources */,
+				DCEC8D551B6997B7007474AB /* CommentsViewController.swift in Sources */,
+				DCEC8D1E1B694AE0007474AB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCEC8D2C1B694AE0007474AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCEC8D371B694AE0007474AB /* TimeLineModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCEC8D321B694AE0007474AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCEC8D171B694AE0007474AB /* TimeLineModel */;
+			targetProxy = DCEC8D311B694AE0007474AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DCEC8D241B694AE0007474AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCEC8D251B694AE0007474AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DCEC8D291B694AE0007474AB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCEC8D2A1B694AE0007474AB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCEC8D381B694AE0007474AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DCEC8D391B694AE0007474AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCEC8D3B1B694AE0007474AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TimeLineModel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DCEC8D3C1B694AE0007474AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TimeLineModel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DCEC8D3E1B694AE0007474AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TimeLineModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeLineModel.app/TimeLineModel";
+			};
+			name = Debug;
+		};
+		DCEC8D3F1B694AE0007474AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TimeLineModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeLineModel.app/TimeLineModel";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCEC8D131B694AE0007474AB /* Build configuration list for PBXProject "TimeLineModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCEC8D381B694AE0007474AB /* Debug */,
+				DCEC8D391B694AE0007474AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCEC8D3A1B694AE0007474AB /* Build configuration list for PBXNativeTarget "TimeLineModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCEC8D3B1B694AE0007474AB /* Debug */,
+				DCEC8D3C1B694AE0007474AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DCEC8D3D1B694AE0007474AB /* Build configuration list for PBXNativeTarget "TimeLineModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCEC8D3E1B694AE0007474AB /* Debug */,
+				DCEC8D3F1B694AE0007474AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DCEC8D1F1B694AE0007474AB /* TimeLineModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DCEC8D201B694AE0007474AB /* TimeLineModel.xcdatamodel */,
+			);
+			currentVersion = DCEC8D201B694AE0007474AB /* TimeLineModel.xcdatamodel */;
+			path = TimeLineModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DCEC8D101B694AE0007474AB /* Project object */;
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Comment" representedClassName="TimeLineModel.Comment" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="personComment" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="comment" inverseEntity="Person" syncable="YES"/>
+        <relationship name="timeLineCommented" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TimeLine" inverseName="comment" inverseEntity="TimeLine" syncable="YES"/>
+    </entity>
+    <entity name="Person" representedClassName="TimeLineModel.Person" syncable="YES">
+        <attribute name="avatar" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="comment" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Comment" inverseName="personComment" inverseEntity="Comment" syncable="YES"/>
+        <relationship name="likedTimeLine" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TimeLine" inverseName="personLiked" inverseEntity="TimeLine" syncable="YES"/>
+        <relationship name="shared" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TimeLine" inverseName="shared" inverseEntity="TimeLine" syncable="YES"/>
+        <relationship name="timeLine" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TimeLine" inverseName="person" inverseEntity="TimeLine" syncable="YES"/>
+    </entity>
+    <entity name="TimeLine" representedClassName="TimeLineModel.TimeLine" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="linkURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="comment" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Comment" inverseName="timeLineCommented" inverseEntity="Comment" syncable="YES"/>
+        <relationship name="person" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="timeLine" inverseEntity="Person" syncable="YES"/>
+        <relationship name="personLiked" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Person" inverseName="likedTimeLine" inverseEntity="Person" syncable="YES"/>
+        <relationship name="shared" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Person" inverseName="shared" inverseEntity="Person" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Comment" positionX="-126" positionY="-258" width="128" height="103"/>
+        <element name="Person" positionX="-326" positionY="-180" width="128" height="133"/>
+        <element name="TimeLine" positionX="-81" positionY="33" width="128" height="163"/>
+    </elements>
+</model>
