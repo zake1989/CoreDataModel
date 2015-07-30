@@ -151,6 +151,11 @@ extension CoreDataManager {
         //to handle the one to many relation here. we need to delete both side object here
         //here the many side is on person so remove the time line object at person's nsset then the time line object can be removed
         person.removeCreatedTimeLine(timeLine)
+        for comment in timeLine.comment.allObjects as! [Comment] {
+            comment.personComment.removeCreatedComment(comment)
+            timeLine.removeCreatedComment(comment)
+            managedContext.deleteObject(comment)
+        }
         managedContext.deleteObject(timeLine)
         saveManagedObjectContent()
     }
