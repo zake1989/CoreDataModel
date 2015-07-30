@@ -43,6 +43,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
 //        let snake = manager.fetchPerson(NSPredicate(format: "name == %@", "snake")).first
 //        let timeLine = manager.fetchTimeLine(nil).first
+//        
+//        let comment = manager.fetchCommentsBy(snake!, timeLine: timeLine!).first
+//        manager.deleteComment(comment!, PostBy: snake!, ForTimeLine: timeLine!)
+//
+//        manager.person(snake!, UnlikeTimeLinePost: timeLine!)
+//        
+//        println(timeLine?.personLiked.count)
+//        println(snake?.likedTimeLine.count)
         
 //        let comment = manager.fetchCommentsBy(snake!, timeLine: timeLine!).first
 //        

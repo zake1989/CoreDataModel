@@ -75,6 +75,22 @@ extension TimeLineViewController {
         self.performSegueWithIdentifier("showComments", sender: self)
     }
     
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if (editingStyle == UITableViewCellEditingStyle.Delete) {
+            // handle delete (by removing the data from your array and updating the tableview)
+            let timeLine = timeLines[indexPath.row] as! TimeLine
+            let person = timeLine.person
+            manager.deleteTimeLine(timeLine, ForPerson: person)
+            
+            timeLines = manager.fetchTimeLine(nil)
+            timeLineTable.reloadData()
+        }
+    }
+    
     @IBAction func showMyTimeLine(sender: AnyObject) {
         timeLines = manager.fetchTimeLine(NSPredicate(format: "person == %@", person))
         timeLineTable.reloadData()

@@ -148,9 +148,10 @@ extension CoreDataManager {
     
     func deleteTimeLine(timeLine: TimeLine, ForPerson person: Person) {
         //delete time line
-        //to handle the one to many relation here. the only thing need to do is remove the object on one side. based on different logic we need the delete rule may need to change
-        //here the many side is on person so remove the time line object at person's nsset after save the time line object will be deleted
+        //to handle the one to many relation here. we need to delete both side object here
+        //here the many side is on person so remove the time line object at person's nsset then the time line object can be removed
         person.removeCreatedTimeLine(timeLine)
+        managedContext.deleteObject(timeLine)
         saveManagedObjectContent()
     }
     
@@ -213,6 +214,7 @@ extension CoreDataManager {
         //to delete an comment all relation must be deleted which means both one to many relation in person and time line should be manipulated
         person.removeCreatedComment(comment) //delete the comment in preson
         timeLine.removeCreatedComment(comment) //delete the comment in time line
+        managedContext.deleteObject(comment) //delete the comment object
         saveManagedObjectContent()
     }
 }
