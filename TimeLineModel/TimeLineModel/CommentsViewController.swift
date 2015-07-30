@@ -20,8 +20,8 @@ class CommentsViewController: UIViewController, UITableViewDataSource, UITableVi
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         manager = CoreDataManager()
-//        comments = manager.fetchCommentsByTimeLine(timeLine)
-        comments = manager.fetchComment(nil)
+        comments = manager.fetchCommentsByTimeLine(timeLine)
+//        comments = manager.fetchComment(nil)
         commentsTable.dataSource = self
         commentsTable.delegate = self
     }
